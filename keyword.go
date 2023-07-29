@@ -66,11 +66,13 @@ func newKeywordManager() *keywordManager {
 
 	kwm.add(elementCategoryAnimeSeasonPrefix, keywordOptionsUnidentifiable, []string{"S", "SAISON", "SEASON"})
 	kwm.add(elementCategoryAnimeType, keywordOptionsUnidentifiable, []string{
-		"GEKIJOUBAN", "MOVIE", "OAD", "OAV", "ONA", "OVA", "SPECIAL", "SPECIALS", "TV"})
+		"GEKIJOUBAN", "MOVIE", "OAD", "OAV", "ONA", "OVA", "SPECIAL", "SPECIALS",
+		"TV", "番外編", "總集編", "映像特典", "特典", "特典アニメ"})
 	kwm.add(elementCategoryAnimeType, keywordOptionsUnidentifiableUnsearchable, []string{
 		"SP"}) // e.g "Yumeiro Patissiere SP Professional"
 	kwm.add(elementCategoryAnimeType, keywordOptionsUnidentifiableInvalid, []string{
-		"ED", "ENDING", "NCED", "NCOP", "OP", "OPENING", "PREVIEW", "PV"})
+		"ED", "ENDING", "NCED", "NCOP", "OP", "OPENING", "PREVIEW",
+		"PV", "EVENT", "TOKUTEN", "LOGO", "CM", "SPOT", "MENU"})
 	kwm.add(elementCategoryAudioTerm, keywordOptionsDefault, []string{
 		// Audio channels
 		"2.0CH", "2CH", "5.1", "5.1CH", "DTS", "DTS-ES", "DTS5.1", "TRUEHD5.1",
